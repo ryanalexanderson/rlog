@@ -2,7 +2,7 @@
 import logging
 import redis
 
-from .formatters import JSONFormatter
+from .formatters import JSONFormatter, DictFormatter
 
 
 class RedisHandler(logging.Handler):
@@ -11,7 +11,7 @@ class RedisHandler(logging.Handler):
     """
 
     def __init__(self, channel, redis_client=None,
-                 formatter=JSONFormatter(),
+                 formatter=DictFormatter(),
                  level=logging.NOTSET, **redis_kwargs):
         """
         Create a new logger for the given channel and redis_client.
