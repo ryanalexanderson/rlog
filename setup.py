@@ -4,7 +4,7 @@ import sys
 from setuptools import setup
 
 
-conditional_kwargs = {'install_requires': ['redis'], 'tests_require': ['pytest>=2.5.0']}
+conditional_kwargs = {'install_requires': ['git+https://github.com/ryanalexanderson/redis-py'], 'tests_require': ['pytest>=2.5.0']}
 
 if not hasattr(sys, 'pypy_translation_info'):
     conditional_kwargs['install_requires'].append('ujson')
@@ -15,8 +15,8 @@ if sys.version_info < (3, 3):
 setup(
     name='rlog',
     version='0.3',
-    description='Small handler and formatter for using python logging with Redis',
-    url='https://github.com/lobziik/rlog',
+    description='Small handler and formatter for using python logging with Redis streams',
+    url='https://github.com/ryanalexanderson/rlog',
     packages=['rlog', 'tests'],
     license='MIT',
     keywords=['Redis', 'logging', 'log', 'logs'],

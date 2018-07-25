@@ -1,9 +1,9 @@
 rlog
 ====
 
-Small handler and formatter for using python logging with Redis.
+Small handler and formatter for using python logging with Redis Streams.
 This is cleared and simplified version of [python-redis-log](https://github.com/jedp/python-redis-log
-) by Jed Parsons, with Python3 support.
+) by Jed Parsons, with Python3 support, and Streams support.
 
 [![Build Status](https://travis-ci.org/lobziik/rlog.svg?branch=master)](https://travis-ci.org/lobziik/rlog)
 [![Coverage Status](https://coveralls.io/repos/lobziik/rlog/badge.png?branch=master)](https://coveralls.io/r/lobziik/rlog?branch=master)
